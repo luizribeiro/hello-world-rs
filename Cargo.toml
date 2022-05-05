@@ -6,3 +6,6 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+# nixpkgs has a bug as of 04/05/2022 where building packages with no
+# dependencies crashes with "There is no dependency to vendor in this project"
+regex = "1.5.5"
